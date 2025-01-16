@@ -43,7 +43,7 @@ def find_naver_campaign_links(visited_urls_file='visited_urls_'+ site +'.txt'):
     # Check each Naver link
     for link in naver_links:
         full_link = urljoin(base_url, link)
-        print(f"{site}\tlinks : " + full_link)
+        ### print(f"{site}\tlinks : " + full_link)
         if full_link in visited_urls:
             continue  # Skip already visited links
 

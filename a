@@ -1,0 +1,77 @@
+Using username "ubuntu".
+Authenticating with public key "rsa-key-20221202"
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-1018-oracle x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Jan  6 05:12:56 UTC 2025
+
+  System load:  0.07               Processes:             141
+  Usage of /:   31.1% of 48.27GB   Users logged in:       0
+  Memory usage: 49%                IPv4 address for ens3: 10.0.0.147
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+2 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+3 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Last login: Mon Jan  6 05:12:58 2025 from 49.170.169.175
+ubuntu@mrfoxsvc:~$ ls
+containers  docker  ip.sh     p.sh                        venv.sh
+deactivate  gitdoc  nogitdoc  self-hosted-ai-starter-kit  virtualenv_guide
+ubuntu@mrfoxsvc:~$ cat doit.sh
+cat: doit.sh: No such file or directory
+ubuntu@mrfoxsvc:~$ cd gitdoc/naver-paper/
+ubuntu@mrfoxsvc:~/gitdoc/naver-paper$ cat doit.sh
+#!/bin/bash
+cd /home/ubuntu/gitdoc/naver-paper
+date > log.txt
+source ./naver_paper/bin/activate
+python3 run_new.py -i chinst -p ckaRo$69 &> log.txt
+deactivate
+python3 tel1.py
+cat log.txt >> loglist.txt
+echo "--------------------" >> log.txt
+
+ubuntu@mrfoxsvc:~/gitdoc/naver-paper$ ls
+LICENSE               naver_paper             tel1.py
+README.md             naver_paper_clien.py    tel2.py
+__pycache__           naver_paper_damoang.py  user_dir
+accounts.json.sample  naver_paper_ppomppu.py  v.sh
+doit.sh               naver_paper_ruliweb.py  visited_urls_clien.txt
+log.txt               requirements.txt        visited_urls_damoang.txt
+loglist.txt           run.py                  visited_urls_ppmppu.txt
+main.py               run_new.py
+naver                 setup.py
+ubuntu@mrfoxsvc:~/gitdoc/naver-paper$ crontab -e
+crontab: installing new crontab
+ubuntu@mrfoxsvc:~/gitdoc/naver-paper$ vi doit.sh
+ubuntu@mrfoxsvc:~/gitdoc/naver-paper$ cat v.sh
+#!/usr/bin/bash
+source naver_paper/bin/activate
+ubuntu@mrfoxsvc:~/gitdoc/naver-paper$ vi run_new.py
+    cd_obj = None
+    headless = args.headless
+    newsave = args.newsave
+    if (args.id is None and
+            args.pw is None and
+            args.cd is None and
+            args.credential_file is None):
+        id = os.getenv("USERNAME")
+        pw = os.getenv("PASSWORD")
+        cd_env = os.getenv("CREDENTIALENV", None)
+        if(pw is None and pw is None and cd_env is None):
+            print('not setting USERNAME / PASSWORD')
+            exit()
