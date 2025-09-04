@@ -16,7 +16,7 @@ def find_naver_campaign_links(visited_urls_file='visited_urls_'+ site +'.txt'):
     # Send a request to the base URL
     try:
         response = requests.get(base_url, timeout=5)
-        print(f"{site}\tlist get HTTP STATUS : {response.status_code}")
+        #print(f"{site}\tlist get HTTP STATUS : {response.status_code}")
     except:
         print(f"{site}\tlist get error\r\n{base_url}")
         return []

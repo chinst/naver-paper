@@ -177,7 +177,7 @@ def alert_accept(alert, drvier):
     try:
         alert.accept()
     except:
-        print("일반적인 방법으로 알럿을 닫을 수 없습니다. JavaScript를 사용해 닫기를 시도합니다.")
+        #print("일반적인 방법으로 알럿을 닫을 수 없습니다. JavaScript를 사용해 닫기를 시도합니다.")
         drvier.execute_script("window.alert = function() {};")
         drvier.execute_script("window.confirm = function() { return true; };")
 
@@ -199,9 +199,9 @@ def visit(campaign_links, driver2):
         except:
             try:
                 div_dim = driver2.find_element('css selector', 'div.dim')
-                print(f"레이어 알럿창\r\n{div_dim.text}")
+                #print(f"레이어 알럿창\r\n{div_dim.text}")
             except:
-                print(f"화면을 불러오지 못했거나 또는 클릭할 수 있는 내용 없음")
+                #print(f"화면을 불러오지 못했거나 또는 클릭할 수 있는 내용 없음")
                 # error_title = driver2.find_element('css selector', 'div.error_title')
                 # print(f"{error_title.text}")
                 pass
